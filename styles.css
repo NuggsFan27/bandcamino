@@ -1,0 +1,254 @@
+body {
+    margin: 0 auto;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #f4f4f4;
+    width: 1280px;  /* Width fixed at 1280px */
+  }
+
+header {
+    background-color: #222;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ff5f57;
+  }
+
+nav {
+    text-align: center;
+    background-color: #333;
+    padding: 0.5rem;
+    width: 102.5%;
+    font-size: 2rem;
+  }
+
+nav a {
+    margin: 0 1rem;
+    color: #ccc;
+    text-decoration: none;
+  }
+
+nav a:hover {
+    color: #ff5f57;
+  }
+
+  main {
+    padding: 2rem 0;
+  }
+
+/* Light mode styles */ 
+.light-mode {
+  background-color: #f9f9f9;
+  color: #111;
+}
+
+.light-mode header {
+  background-color: #eaeaea;
+}
+
+.light-mode nav {
+  background-color: #ddd;
+}
+
+.light-mode nav a {
+  color: #333;
+}
+
+.light-mode nav a:hover {
+  color: #ff5f57;
+}
+
+.light-mode footer {
+  background-color: #eaeaea;
+  color: #111;
+}
+
+section {
+    padding: 2rem;
+}
+
+#about p {
+    font-size: 1.5rem;
+}
+
+.tour-dates ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h2 {
+    color: #ff5f57;
+}
+
+/* Tour section layout */
+.tour-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center; 
+  }
+  
+.tour-section img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+.tour-dates {
+    flex: 1;
+    text-align: left;
+  }
+  
+.tour-dates h2 {
+    color: #ff5f57;
+    margin-top: 0;
+  }
+  
+.tour-dates ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.tour-dates li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #444;
+  }
+  
+  /* Hide all albums initially */
+  .album {
+    display: none;
+    background-color: #222;
+    padding: 1rem;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .album img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .album h3 {
+    color: #ff5f57;
+  }
+  
+  .album p {
+    color: #f4f4f4;
+  }
+
+  .album-display {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .album-controls {
+    margin-bottom: 1.5rem;
+  }
+  
+  .album-controls label {
+    background-color: #444;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .album-controls label:hover,
+  .album-controls label:focus {
+    background-color: #ff5f57;
+    color: #fff;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* Showing only the selected album */
+  #tryhard:checked ~ .album-info .tryhard,
+  #selftitled:checked ~ .album-info .selftitled,
+  #dark:checked ~ .album-info .dark {
+    display: block;
+  }
+  
+
+  #number-game {
+    margin-bottom: 2em;
+  }
+
+  #guessForm {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  #guessResult {
+    font-weight: bold;
+    min-width: 200px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .contact-form button {
+    background-color: #ff5f57;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .contact-form button:hover {
+    background-color: #e74c3c;
+  }
+
+  input[placeholder*="*"], textarea[placeholder*="*"] {
+    padding-left: 6px;
+  }
+
+  /* Displaying error messages in red text*/
+  .error {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  /* Displaying thank you message in green */
+  .thank-you {
+    display: none; 
+    margin-top: 1em;
+    font-weight: bold;
+    color: green;
+  }
+
+  footer {
+    background-color: #222;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-top: 2rem;
+  }

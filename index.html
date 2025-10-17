@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script> <!--Linking JS file here-->
+  <title>The Band CAMINO</title>
+</head>
+<body>
+
+<header>
+  <h1>The Band CAMINO</h1>
+  <p>New Song "Infinity" Out Soon!</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#tour">Tour Dates</a>
+  <a href="#media">Media</a>
+  <a href="#number-game">Game</a>
+  <a href="#contact">Contact</a>
+  <button id="theme-toggle">Switch Theme</button>
+</nav>
+
+<main>
+  <section id="about">
+  <h2>About The Band</h2>
+  <img src="On_stage.jpg" alt="The Band Camino playing in April 2022."> <!-- Photo taken from Google.com -->
+  <p>The Band CAMINO is an American pop-rock band from Memphis, Tennessee, known for their emotionally charged lyrics and catchy, guitar-driven sound. Blending elements of indie rock, pop, and alternative, they’ve gained a dedicated fanbase with hits like “Daphne Blue” and “See Through,” earning a reputation for high-energy performances and relatable songwriting.</p>
+  </section>
+
+  <section id="tour" class="tour-section">
+    <h2>See Us Live</h2>
+    <section class="tour-dates">
+        <h3>Tour Dates</h3>
+        <ul>
+          <li>May 15: Let's Go Music Festival - Princess Anne Fairgrounds, MD</li>
+          <li>May 22: Pier Six Pavilion - Baltimore, MD</li>
+          <li>May 28: Hammerstein Ballroom - New York, NY</li>
+          <li>June 3: Nationals Park - Washington, DC</li>
+          <li>July 20: The Fillmore - Philadelphia, PA</li>
+        </ul>
+    </section>
+    <img src="Band_Photo_1.jpg" alt="Band group photo">
+  </section>
+
+  <section id="media" class="album-display">
+    <h2>Media</h2>
+  
+    <!-- Radio Buttons -->
+    <input type="radio" name="album" id="tryhard" checked>
+    <input type="radio" name="album" id="selftitled">
+    <input type="radio" name="album" id="dark">
+  
+    <!-- Controls for album display -->
+    <nav class="album-controls" aria-label="Album selection">
+      <label for="tryhard">Tryhard EP</label>
+      <label for="selftitled">Self-Titled</label>
+      <label for="dark">The Dark</label>
+    </nav>
+  
+    <!-- Album display sections -->
+    <section class="album-info">
+      <figure class="album tryhard">
+        <img src="tryhard.jpeg" alt="Tryhard EP">
+        <figcaption>
+          <h3>Tryhard EP</h3>
+          <p>Released: August 23, 2019<br>A fan favorite EP that blends pop and alternative vibes.</p>
+        </figcaption>
+      </figure>
+  
+      <figure class="album selftitled">
+        <img src="self-titled.jpeg" alt="Self-Titled">
+        <figcaption>
+          <h3>Self-Titled</h3>
+          <p>Released: September 10, 2021<br>The Band CAMINO's debut album</p>
+        </figcaption>
+      </figure>
+  
+      <figure class="album dark">
+        <img src="the-dark.jpeg" alt="The Dark">
+        <figcaption>
+          <h3>The Dark</h3>
+          <p>Released: August 11, 2023<br>The band's sopohomore album features darker, more refined sound that explores the band’s evolution.</p>
+        </figcaption>
+      </figure>
+    </section>
+  </section>
+
+  <section id="number-game">
+    <h2>Guess the Number (1–10)</h2>
+    <label>
+      <input type="number" id="userGuess" min="1" max="10" placeholder="Enter a number 1-10">
+    </label>
+    <button type="button" onclick="checkGuess()">Guess</button> <!--Calling the checkGuess function for the guessing game from my JS file.-->
+    <p id="guessResult"></p>
+  </section>
+
+  <section id="contact" class="contact-form"> <!--Contact form labels and fields for input-->
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name *" required>
+      </label>
+      <span class="error" id="firstNameError"></span>
+  
+      <label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name *" required>
+      </label>
+      <span class="error" id="lastNameError"></span>
+  
+      <label>
+        <input type="email" id="email" name="email" placeholder="Email Address">
+      </label>
+      <span class="error" id="emailError"></span>
+  
+      <label>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+      </label>
+      <span class="error" id="phoneError"></span>
+  
+      <label>
+        <textarea id="comments" name="comments" rows="5" placeholder="Your Message *" required></textarea>
+      </label>
+      <span class="error" id="commentsError"></span>
+  
+      <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <label>
+          <input type="radio" name="contactMethod" value="email" checked>
+          Email
+        </label>
+        <label>
+          <input type="radio" name="contactMethod" value="phone">
+          Phone
+        </label>
+      </fieldset>
+      <span class="error" id="contactMethodError"></span>
+  
+      <button type="submit">Submit</button>
+      <span class="thank-you" id="thankYouMessage"></span>
+    </form>
+  </section>
+</main>
+  <footer>
+    <p>Website created by Ty Stines - GIT 417</p>
+  </footer>
+</body>
+</html>
