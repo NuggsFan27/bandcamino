@@ -1,7 +1,7 @@
 # The Band Camino
 The Band CAMINO Website Redesign is a fan-focused project showcasing the band’s music, tour dates, and interactive experiences. Built as a creative UX portfolio piece, the site reimagines how fans engage with discography, visuals, and mini-games — blending music appreciation with playful interactivity.
 
-**Link to project:** https://nuggsfan27.github.io/assignment_4_draft/
+**Link to project:** [https://nuggsfan27.github.io/assignment_4_draft/](https://nuggsfan27.github.io/bandcamino/)
 
 
 ## How It's Made:
