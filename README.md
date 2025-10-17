@@ -25,6 +25,17 @@ Contact form using HTML validation for fan messages
 
 Dark/light mode toggle for improved accessibility
 
+## Assets
+
+script.js
+index.html
+styles.css
+tryhard.jpeg
+the-dark.jpeg
+self-titled.jpeg
+band_photo_1.jpg
+on_stage.jpg
+
 
 ## Lessons Learned:
 
